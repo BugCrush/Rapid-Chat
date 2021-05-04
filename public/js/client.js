@@ -1,5 +1,7 @@
 const socket = io("http://localhost:3000");
 
+socket = io.listen(process.env.PORT);
+
 const form = document.getElementById('sendmsg');
 
 const msgInp = document.getElementById('msgInp');
