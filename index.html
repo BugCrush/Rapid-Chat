@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Chat - Realtime Chatting Web App</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js" ></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navcontent">
+            <img class="logo" src="rapidchatlogo.png" alt="rapid chat logo">
+            <p class="nav-header">Rapid Chat</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chat-area">
+            
+        </div>
+        <div class="sendmsg">
+            <form action="#" id="sendmsg">
+                <input type="text" name="msgInp" id="msgInp" placeholder="Type your text here..." autocomplete="off" autocapitalize="sentences">
+                <button class="sendbtn" type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2bb7f1865a.js" crossorigin="anonymous"></script>
+</body>
+</html>
