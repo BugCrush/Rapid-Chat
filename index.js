@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 io.on('connection', socket =>{
 
     socket.on('new-member-logon', name =>{
-        console.log("New member: ", name);
         users[socket.id] = name;
         socket.broadcast.emit('member-logon', name);
     });
