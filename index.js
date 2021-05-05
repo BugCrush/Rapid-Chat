@@ -10,6 +10,8 @@ const io = require('socket.io')(server)
 
 const users = {}
 
+const PORT = process.env.PORT || 6969
+
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
@@ -34,4 +36,6 @@ io.on('connection', socket =>{
 
 })
 
-server.listen(3000)
+server.listen(PORT)
+
+io.listen(PORT)

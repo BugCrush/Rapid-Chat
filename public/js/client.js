@@ -1,6 +1,4 @@
-const socket = io("http://localhost:3000");
-
-socket = io.listen(process.env.PORT || 3000);
+const socket = io("https://rapidchatapp.herokuapp.com/");
 
 const form = document.getElementById('sendmsg');
 
