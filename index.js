@@ -37,5 +37,3 @@ io.on('connection', socket =>{
 })
 
 server.listen(PORT)
-
-io.listen(PORT)
