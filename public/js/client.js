@@ -54,9 +54,7 @@ socket.on('member-logon', name =>{
 })
 
 socket.on('msg-receive', data =>{
-    if(document.getElementById('msgInp').value != ''){
-        append(`${data.name}: ${data.message}`, 'text', 'left');
-    };
+    append(`${data.name}: ${data.message}`, 'text', 'left');
 })
 
 socket.on('member-logout', name =>{
@@ -76,11 +74,9 @@ socket.on('member-logout', name =>{
 })
 
 form.addEventListener('submit', (e) =>{
-    if(document.getElementById('msgInp').value != ''){
-        e.preventDefault();
-        const message = msgInp.value;
-        append(`You: ${message}`, 'text', 'right');
-        socket.emit('msg-send', message);
-        document.getElementById('msgInp').value = '';
-    };
+    e.preventDefault();
+    const message = msgInp.value;
+    append(`You: ${message}`, 'text', 'right');
+    socket.emit('msg-send', message);
+    document.getElementById('msgInp').value = '';
 })
