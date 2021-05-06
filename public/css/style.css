@@ -28,7 +28,7 @@
     margin-top: -15px;
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3){
         .logo{
@@ -46,7 +46,7 @@
     font-size: 65px;
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
         .navbar{
@@ -63,7 +63,7 @@
     text-shadow: 0 0 var(--outlinechat);
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
         .nav-header{
@@ -102,7 +102,7 @@ body{
     height: 72vh;
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
         .chat-area{
@@ -142,7 +142,7 @@ body{
     hyphens: auto;
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
         .text{
@@ -206,7 +206,7 @@ body{
     transition: background-color 0.5s ease, border 0.5s ease;
 }
 @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 300px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) { 
         #msgInp{
