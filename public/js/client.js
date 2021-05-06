@@ -6,9 +6,9 @@ const msgInp = document.getElementById('msgInp');
 
 const chatArea = document.querySelector(".chat-area");
 
-//while(!name){
+while(!name){
     const name = prompt("Enter your name to start chatting:");
-//};
+};
 
 var audioRecieve = new Audio('notif-receive.mp3');
 var audioJoin = new Audio('notif-join.mp3');
