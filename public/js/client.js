@@ -6,7 +6,9 @@ const msgInp = document.getElementById('msgInp');
 
 const chatArea = document.querySelector(".chat-area");
 
-const name = prompt("Enter your name to start chatting:");
+//while(!name){
+    const name = prompt("Enter your name to start chatting:");
+//};
 
 var audioRecieve = new Audio('notif-receive.mp3');
 var audioJoin = new Audio('notif-join.mp3');
@@ -54,7 +56,9 @@ socket.on('member-logon', name =>{
 })
 
 socket.on('msg-receive', data =>{
-    append(`${data.name}: ${data.message}`, 'text', 'left');
+    while(document.getElementById('msgInp').value != ''){
+        append(`${data.name}: ${data.message}`, 'text', 'left');
+    };
 })
 
 socket.on('member-logout', name =>{
@@ -74,9 +78,11 @@ socket.on('member-logout', name =>{
 })
 
 form.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    const message = msgInp.value;
-    append(`You: ${message}`, 'text', 'right');
-    socket.emit('msg-send', message);
-    document.getElementById('msgInp').value = '';
+    while(document.getElementById('msgInp').value != ''){
+        e.preventDefault();
+        const message = msgInp.value;
+        append(`You: ${message}`, 'text', 'right');
+        socket.emit('msg-send', message);
+        document.getElementById('msgInp').value = '';
+    };
 })
