@@ -54,7 +54,7 @@ socket.on('member-logon', name =>{
 })
 
 socket.on('msg-receive', data =>{
-    while(document.getElementById('msgInp').value != ''){
+    if(document.getElementById('msgInp').value != ''){
         append(`${data.name}: ${data.message}`, 'text', 'left');
     };
 })
@@ -76,7 +76,7 @@ socket.on('member-logout', name =>{
 })
 
 form.addEventListener('submit', (e) =>{
-    while(document.getElementById('msgInp').value != ''){
+    if(document.getElementById('msgInp').value != ''){
         e.preventDefault();
         const message = msgInp.value;
         append(`You: ${message}`, 'text', 'right');
