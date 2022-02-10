@@ -1,5 +1,7 @@
 # Rapid-Chat - A Realtime Anonymous Communication Web App
 
+<p align="center"><img src="https://github.com/BugCrush/Rapid-Chat/blob/main/public/rapidchatlogo.png" width="200"></p>
+
 #### Rapid Chat is a web application that allows, virtually indefinite, users to send, virtually indefinite, messages in a chat room where they can choose to communicate via an anonymous alias. The application never keeps track of any previous communication in order to maintain true anonymity and privacy. Simply enter the chatroom, get a name and start chatting.
 #### Enter the skull session here: [Rapid-Chat](https://rapidchatapp.herokuapp.com/)
 ---
